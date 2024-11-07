@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning spot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/g_logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to Learning Spot</h1>
+            <p>Welcome to Your Learning Journey – Discover a world of knowledge, master new skills, and achieve your goals with our interactive and personalized courses. Dive in and start building your future today!</p>
+            <a href="" class="hero-btn">Visit Us</a>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>At Learning Spot, we empower individuals through accessible, high-quality education. Our platform offers a variety of courses, from digital skills to professional development, designed to help you grow and succeed.
+
+                With expert instructors and real-world applications, we create a community of lifelong learners. Start your journey with us today and unlock your potential.</p>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h2>Courses</h2>
+        <div class="courses-slider">
+            <div class="course-card">
+                <img src="images/skills/docs.png" alt="Course 1">
+                <div class="course-info">
+                    <h3>Doc</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/gmail.png" alt="Course 2">
+                <div class="course-info">
+                    <h3>Gmail</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/googlecalendar.png" alt="Course 3">
+                <div class="course-info">
+                    <h3>Course Title 3</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/googleforms.png" alt="Course 4">
+                <div class="course-info">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/meet.png" alt="Course 4">
+                <div class="course-info">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/microsoft.png" alt="Course 4">
+                <div class="course-info">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/office.png" alt="Course 4">
+                <div class="course-info">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/outlook.png" alt="Course 4">
+                <div class="course-info">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/sheets.png" alt="Course 4">
+                <div class="course-info">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="images/skills/zoom.png" alt="Course 4">
+                <div class="Zoom">
+                    <h3>Course Title 4</h3>
+                    <p>Brief description of the course content goes here.</p>
+                </div>
+            </div>
+            <!-- Add more course cards as needed -->
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+   <!-- Get in Touch Section Start -->
+<section class="get-in-touch-section">
+    <div class="contact-card">
+        <!-- Left Side Content -->
+        <div class="contact-info">
+            <h2>Connect with Us</h2>
+            <p>We're here to answer your questions and help you start your journey. Reach out to us for any inquiries or assistance you may need.</p>
+        </div>
+        
+        <!-- Right Side Form -->
+        <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+        <!-- Overlay for Background Image -->
+        <div class="background-overlay"></div>
+    </div>
+</section>
+<!-- Get in Touch Section End -->
+
+
+<!-- Footer Section Start -->
+<footer>
+    <!-- Upper Part -->
+    <div class="footer-upper">
+        <!-- Left Section - Company Links -->
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Learning Spot</a></li>
+                <li><a href="#">Courses</a></li>
+            </ul>
+        </div>
+
+        <!-- Middle Section - Contact -->
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> +250 784 602 752</li>
+                <li><i class="fas fa-envelope"></i> learningspot@org.com</li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Section - Newsletter -->
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter to get the latest updates.</p>
+            <div class="newsletter-subscribe">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lower Part -->
+    <div class="footer-lower">
+        <div class="footer-logo">
+            <img src="images/g_logo.png" alt="Logo">
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 Learning Spot. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+
+    
+
+    <script>
+        // Existing navigation script
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu() {
+            navLinks.style.right = "0";   
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";   
+        }
+    
+        // Course card slider script
+        var currentIndex = 0;
+        var cards = document.querySelectorAll(".courses-slider .course-card");
+        var totalCards = cards.length;
+        var slideInterval = setInterval(nextSlide, 3000); // 3-second interval
+    
+        function showSlide(index) {
+            cards.forEach((card, i) => {
+                card.style.display = i >= index && i < index + 4 ? "flex" : "none";
+            });
+        }
+    
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalCards;
+            if (currentIndex + 4 > totalCards) currentIndex = 0; // Reset to the first set if we reach the end
+            showSlide(currentIndex);
+        }
+    
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+            if (currentIndex < 0) currentIndex = totalCards - 4; // Go back to last set if we go below 0
+            showSlide(currentIndex);
+        }
+    
+        // Show the initial set of cards
+        showSlide(currentIndex);
+    
+        // Stop the automatic slider when user navigates manually
+        document.querySelector(".prev").onclick = function() {
+            clearInterval(slideInterval);
+            prevSlide();
+        };
+        
+        document.querySelector(".next").onclick = function() {
+            clearInterval(slideInterval);
+            nextSlide();
+        };
+    </script>
+      
+</body>
+</html>
