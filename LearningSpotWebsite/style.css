@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -94,6 +99,7 @@ nav img {
     border: 1px solid #47e205;
     background: #47e205;
     transition: 1s;
+    color: #2e206d;
 
 }
 
@@ -147,7 +153,7 @@ nav .fa{
 .about {
     min-height: 80vh;
     width: 100%;
-    background-image: url('images/section2.png'); /* Replace with your actual image path */
+    background-image: url('images/about.png'); /* Replace with your actual image path */
     background-position: center;
     background-size: cover;
     display: flex;
@@ -429,16 +435,21 @@ footer {
     margin-right: 10px;
 }
 
+.contact-info li img,
+.social-media img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 /* Social Media Icons */
 .social-media a {
     margin-right: 10px;
-    color: #ffffff;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    transition: transform 0.3s;
 }
 
 .social-media a:hover {
-    color: #00ff88;
+    transform: scale(1.1);
 }
 
 /* Newsletter Section */
@@ -487,6 +498,141 @@ footer {
 
 .footer-copyright {
     text-align: right;
+}
+
+/* Pricing Section Styling */
+.pricing-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 2rem;
+    background-image: url('images/cashs.png'); /* Replace 'your-background-image.jpg' with your image path */
+    background-position: center;
+    background-size: cover;
+    color: #2e206d;
+}
+
+/* Pricing Content Box */
+.pricing-content {
+    max-width: 400px;
+    text-align: left;
+}
+
+/* Title Styling */
+.pricing-title {
+    font-size: 36px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Pricing Information List */
+.pricing-info {
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-section {
+        justify-content: center;
+    }
+
+    .pricing-content {
+        text-align: center;
+    }
+}
+
+/* Testimonial Section Styling */
+.testimonial-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    padding: 0 2rem;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+}
+
+/* Title Styling for Testimonials */
+.testimonial-title {
+    font-size: 36px;
+    margin: 2rem auto;
+    font-weight: 700;
+    text-align: center; 
+    width: 100%;
+}
+
+/* Testimonial Content Box */
+.testimonial-content {
+    max-width: 600px;
+    text-align: left; 
+}
+
+/* Name Styling */
+.testimonial-name {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #47e205;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Button Styling */
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .testimonial-section {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .testimonial-content {
+        text-align: left;
+    }
+}
+
+.reviews-section {
+    height: 20vh;
+    background-color: #2e206d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #47e205;
+}
+
+.reviews-section h2 {
+    font-size: 2em;
+    margin: 0;
 }
 
 
