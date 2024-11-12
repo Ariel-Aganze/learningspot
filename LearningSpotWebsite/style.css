@@ -190,6 +190,7 @@ nav .fa{
     font-size: 1.25rem;
     max-width: 600px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .courses {
