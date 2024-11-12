@@ -153,7 +153,7 @@ nav img {
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 100px;
-    color: #47e205;
+    color: #fff;
 }
 
 /* Headings and Text */
@@ -179,8 +179,8 @@ nav img {
 }
 
 .french-content a {
-    color: #47e205;
-    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Positioning Content on the Right */
